@@ -1,0 +1,79 @@
+.contact-form-container {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  justify-content: start;
+  align-items: start;
+}
+
+.form-input, .form-select, .form-textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.form-select{
+  background-color: #fff;
+  color: var(--primary-font-color);
+}
+
+
+.form-textarea {
+  resize: vertical;
+  height: 100px;
+  font-family: inherit;
+}
+
+.form-row {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.form-submit-button {
+	padding-top: 0px;
+	padding-left: 0px;
+	font-size: 14px;
+	color: var(--link-color);
+	opacity: 0.8;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: all 0.3s ease;
+}
+
+.form-submit-button:hover {
+  opacity: 1;
+}
+
+.form-status {
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 10px;
+  text-align: center;
+}  
+
+@media (max-width: 600px) {
+  .form-input, .form-select, .form-textarea, .form-row {
+    width: 100%;
+  }
+}
