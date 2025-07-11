@@ -33,9 +33,6 @@ const Notfound = () => {
 							<div className="not-found-message">
 								We can't seem to find the page you're looking
 								for.
-								<br />
-								The requested URL "{window.location.href}" was
-								not found on this server.
 							</div>
 							<a href="/" className="not-found-link">
 								Go back to the home page
