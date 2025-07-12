@@ -12,7 +12,6 @@ import Contact from "./pages/contact";
 import PrivacyPolicy from "./pages/privacy_policy";
 import TermsOfService from "./pages/tos";
 import Acknowledgments from "./pages/acknowledgments";
-import PdfViewer from "./pages/pdfViewer";
 import Notfound from "./pages/404";
 
 import { TRACKING_ID } from "./data/tracking";
@@ -38,7 +37,6 @@ function App() {
 				<Route path="/tos" element={<TermsOfService />} />
 				<Route path="/privacy_policy" element={<PrivacyPolicy />} />
 				<Route path="/acknowledgments" element={<Acknowledgments />} />
-				<Route path='/projects/view_pdf/:filename' element={<PdfViewer />} />
 				<Route path="*" element={<Notfound />} />
 			</Routes>
 		</div>
