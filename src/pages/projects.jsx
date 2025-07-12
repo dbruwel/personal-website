@@ -43,10 +43,10 @@ const Projects = () => {
 						</div>
 
 						<div className="subtitle projects-subtitle">
-							These include public reasearch projects both affiliated and unaffiliated, personal and passion projects, and some things I've done just for fun. Feel free to check them out, most of them link to either a Github repository or an academic style paper. 
+							These include public reasearch projects both affiliated and unaffiliated, personal and passion projects, and some things I've done just for fun. Feel free to check them out, most of them link to either a Github repository or an academic style paper.
 						</div>
 
-						<div className="projects-list">
+						<div className="projects-list" style={{ marginLeft: '20px', marginRight: '20px' }}>
 							<AllProjects />
 						</div>
 					</div>

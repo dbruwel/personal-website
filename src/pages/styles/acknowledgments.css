@@ -47,14 +47,6 @@
 	width: 370px;
 }
 
-.acknowledgments-image-wrapper {
-	display: inline-block;
-	overflow: hidden;
-	width: 100%;
-	border-radius: 10%;
-	transform: rotate(3deg);
-}
-
 .acknowledgments-image-wrapper img {
 	display: block;
 	width: 100%;
@@ -113,5 +105,9 @@
 
 	.acknowledgments-image-container {
 		width: 80%;
+	}
+
+	.acknowledgments-title {
+		font-size: 36px !important;
 	}
 }

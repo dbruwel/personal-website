@@ -45,7 +45,7 @@ function article_3() {
 		date: "29 March 2025",
 		title: "Applications of Information Geometry to Marketing Science",
 		description:
-			"We explore a few applications of information geometry, a relativly new field of statistics, to marketing science.",
+			"We explore a few applications of information geometry, a relativly new field of statistics, to marketing science. ",
 		keywords: [
 			"Information Geometry",
 			"Theoretically Robust Marketing",

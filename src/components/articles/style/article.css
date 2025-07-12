@@ -2,6 +2,9 @@
 
 .article {
 	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: auto;
 }
 
 .article a {
@@ -9,17 +12,19 @@
 }
 
 .article-left-side {
-	min-width: 20%;
-	max-width: 20%;
+	flex: 0 0 20%;
+	padding-left: 20px;
+	box-sizing: border-box;
 }
 
 .article-right-side {
-	flex-basis: 80%;
-	min-width: 700px;
+	padding: 30px;
+	box-sizing: border-box;
+	width: 100%;
+
 	mix-blend-mode: normal;
 	border-radius: 20px;
 	opacity: 0.8;
-	padding: 30px;
 }
 
 .article-right-side:hover {
@@ -55,15 +60,8 @@
 	font-weight: 700;
 }
 
-@media (max-width: 1024px) {
-	.article-left-side {
-		min-width: 10%;
-		max-width: 10%;
-	}
-
-	.article-right-side {
-		flex-basis: 90%;
-		min-width: 85%;
-		max-width: 85%;
+@media (max-width: 600px) {
+	.article {
+		flex-direction: column;
 	}
 }

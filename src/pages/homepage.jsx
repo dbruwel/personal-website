@@ -154,7 +154,7 @@ const Homepage = () => {
 							</a>
 						</div>
 
-						<div className="homepage-projects">
+						<div className="homepage-projects" style={{ marginLeft: '20px', marginRight: '20px' }}>
 							<TopProjects />
 						</div>
 

@@ -15,8 +15,8 @@ const Article = (props) => {
 					<div className="article-date">{date}</div>
 				</div>
 
-				<Link to={link}>
-					<div className="article-right-side">
+				<Link to={link} className="article-right-side">
+					<div>
 						<div className="article-title">{title}</div>
 						<div className="article-description">{description}</div>
 						<div className="article-link">

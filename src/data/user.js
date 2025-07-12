@@ -174,7 +174,7 @@ const INFO = {
 			// logo: "https://info.arxiv.org/brand/images/brand-logomark-primary-large.jpg",
 			logo: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
 			linkText: "View Project",
-			link: "view_pdf/resonances_of_chaotic_systems.pdf",
+			link: "/files/resonances_of_chaotic_systems.pdf",
 		},
 		{
 			title: "On the Automated Classification of Tidal Features in Galaxy Images.",
@@ -183,7 +183,7 @@ const INFO = {
 			// logo: "https://info.arxiv.org/brand/images/brand-logomark-primary-large.jpg",
 			logo: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
 			linkText: "View Project",
-			link: "view_pdf/tidal_feature_classification.pdf",
+			link: "/files/tidal_feature_classification.pdf",
 		},
 		{
 			title: "A Dynamic Model of Stellar Populations.",
@@ -192,7 +192,7 @@ const INFO = {
 			// logo: "https://info.arxiv.org/brand/images/brand-logomark-primary-large.jpg",
 			logo: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
 			linkText: "View Project",
-			link: "view_pdf/stellar_populations.pdf",
+			link: "/files/stellar_populations.pdf",
 		},
 		{
 			title: "A Dynamic Model of Stellar Populations - Modeling Stars With Fixed Lifetimes.",
@@ -201,7 +201,7 @@ const INFO = {
 			// logo: "https://info.arxiv.org/brand/images/brand-logomark-primary-large.jpg",
 			logo: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
 			linkText: "View Project",
-			link: "view_pdf/modeling_stars_with_fixed_lifetimes.pdf",
+			link: "/files/modeling_stars_with_fixed_lifetimes.pdf",
 		},
 		{
 			title: "Training Meta Neural Networks Using Data Generated From an Agent Based Model.",
@@ -210,7 +210,7 @@ const INFO = {
 			// logo: "https://info.arxiv.org/brand/images/brand-logomark-primary-large.jpg",
 			logo: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
 			linkText: "View Project",
-			link: "view_pdf/meta_abm.pdf",
+			link: "/files/meta_abm.pdf",
 		},
 		{
 			title: "Recurrent Compact Quantum Groups.",
@@ -219,7 +219,7 @@ const INFO = {
 			// logo: "https://info.arxiv.org/brand/images/brand-logomark-primary-large.jpg",
 			logo: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
 			linkText: "View Project",
-			link: "view_pdf/recurrent_quantum_groups.pdf",
+			link: "/files/recurrent_quantum_groups.pdf",
 		},
 		{
 			title: "Using Cascaded Jaynes-Cummings Systems to Distinguish Between Pulses With One and Two Photons.",
@@ -228,7 +228,7 @@ const INFO = {
 			// logo: "https://info.arxiv.org/brand/images/brand-logomark-primary-large.jpg",
 			logo: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
 			linkText: "View Project",
-			link: "view_pdf/photon_sorting.pdf",
+			link: "/files/photon_sorting.pdf",
 		},
 	],
 };

@@ -65,7 +65,7 @@
 	margin-top: 25px;
 }
 
-.page-footer {
+/* .page-footer {
 	position: block;
 	margin-top: 50px
 }
@@ -75,6 +75,23 @@
 	position: absolute;
 	left: 0;
 	right: 0;
+	border-top: 2px solid var(--tertiary-color);
+} */
+
+.page-footer {
+	margin-top: 50px;
+	position: relative;
+	/* Needed for the ::before to be positioned correctly */
+	overflow-x: hidden;
+	/* Prevent horizontal overflow from ::before */
+}
+
+.page-footer::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
 	border-top: 2px solid var(--tertiary-color);
 }
 
