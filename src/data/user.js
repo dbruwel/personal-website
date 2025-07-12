@@ -1,6 +1,6 @@
 const INFO = {
 	main: {
-		title: "Daniel Bruwel Portfolio",
+		title: "Daniel Bruwel",
 		name: "Daniel Bruwel",
 		email: "daniel@bruwel.com",
 		logo: "../logo.png",
