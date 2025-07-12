@@ -115,6 +115,8 @@ const Homepage = () => {
 											src="dose_test.png"
 											alt="about"
 											className="homepage-image"
+										// width="370"
+										// height="370"
 										/>
 									</div>
 								</div>

@@ -47,6 +47,7 @@
 
 .homepage-image-wrapper {
 	overflow: hidden;
+	display: flex;
 	border-radius: 10%;
 	transform: rotate(3deg);
 }
