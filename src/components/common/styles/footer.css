@@ -49,7 +49,7 @@
 .footer-legal-link-list {
 	display: flex;
 	list-style: none;
-	justify-content: end;
+	justify-content: flex-end;
 	align-items: center;
 	margin: 0;
 }
