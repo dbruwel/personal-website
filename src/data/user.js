@@ -1,3 +1,6 @@
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+
 const INFO = {
 	main: {
 		title: "Daniel Bruwel",
@@ -150,85 +153,85 @@ const INFO = {
 	},
 
 	projects: [
-		// {
-		// 	title: "Project Thanksgiving.",
-		// 	description:
-		// 		"A side project I'm working on with a friend to develop a turret that can automatically identify bush turkeys, aim a water turret at them, and spray them. A good combination of computer vision, control systems, and a bit of robotics.",
-		// 	logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
-		// 	linkText: "View Project",
-		// 	link: "https://github.com",
-		// },
-		// {
-		// 	title: "A Comparison of Count Forecasting Techniques with Applications to Stock Forecasting.",
-		// 	description:
-		// 		"This project compares various count forecasting techniques, primaraly statistical models. It includes some well konwn techniques, as well as some more recent ones.",
-		// 	logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
-		// 	linkText: "View Project",
-		// 	link: "https://github.com",
-		// },
-
+		{
+			title: "Optimal Policy Selection Under Bilateral Preferences",
+			description: <p><em>Work in progress</em><br />Bilateral preference systems are common in many real world situations. This project explores some methods for selecting optimal policy sets in such systems.</p>,
+			// Bilateral preference systems are common in many real-world situations. This project explores some methods for selecting the optimal policy set in such systems.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+			linkText: "View Project",
+			links: [{ url: "https://github.com/dbruwel/optimal-bilateral-preferences" }],
+		},
+		{
+			title: "Optimal Play in Chopsticks",
+			description: <p><em>Work in progress</em><br />Chopsticks is a simple children's game, often with just two players. This project explores the attractors of the game via a simple direct search.</p>,
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+			linkText: "View Project",
+			links: [{ url: "https://github.com/dbruwel/chopsticks-optimal-play" }],
+		},
 		{
 			title: "Computing Resonances of Chaotic Systems via Chebyshev Polynomials and Hofbauer Extensions.",
-			description:
-				"The transfer operator is critical for the study of dynamic systems. This research project focusses on a novel technique to compute the eigenvalues of the transfer operator for chaotic systems.",
+			description: <p>The transfer operator is critical for the study of dynamic systems. This research project focusses on a novel technique to compute the eigenvalues of the transfer operator for chaotic systems.</p>,
 			// logo: "https://info.arxiv.org/brand/images/brand-logomark-primary-large.jpg",
-			logo: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
+			logo: "https://www.svgrepo.com/show/513273/book-opened.svg",
 			linkText: "View Project",
-			link: "/files/resonances_of_chaotic_systems.pdf",
+			links: [
+				{ url: "/files/resonances_of_chaotic_systems.pdf", text: "Read Paper", icon: faFilePdf },
+				{ url: "https://github.com/dbruwel/chebyshev-hofbauer-resonances", text: "View Repository", icon: faGithub }
+			],
 		},
 		{
 			title: "On the Automated Classification of Tidal Features in Galaxy Images.",
 			description:
 				"Tidal features in galaxies are critical to understanding long-term galactic formation. This research project combines classical and computer vision approaches to classify tidal features in galaxies.",
 			// logo: "https://info.arxiv.org/brand/images/brand-logomark-primary-large.jpg",
-			logo: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
+			logo: "https://www.svgrepo.com/show/513273/book-opened.svg",
 			linkText: "View Project",
-			link: "/files/tidal_feature_classification.pdf",
+			links: [{ url: "/files/tidal_feature_classification.pdf" }],
 		},
 		{
 			title: "A Dynamic Model of Stellar Populations.",
 			description:
 				"This research project proposes a stellar evolution model inspired by the dynamic compartment modeling techniques used in epidemiology.",
 			// logo: "https://info.arxiv.org/brand/images/brand-logomark-primary-large.jpg",
-			logo: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
+			logo: "https://www.svgrepo.com/show/513273/book-opened.svg",
 			linkText: "View Project",
-			link: "/files/stellar_populations.pdf",
+			links: [{ url: "/files/stellar_populations.pdf" }],
 		},
 		{
 			title: "A Dynamic Model of Stellar Populations - Modeling Stars With Fixed Lifetimes.",
 			description:
 				"This research project further investigates dynamic compartment modeling techniques from epidemiology, applied to stellar evolution. This approach adjusts the model to account for fixed stellar lifetimes rather than a continuous lifetime distribution.",
 			// logo: "https://info.arxiv.org/brand/images/brand-logomark-primary-large.jpg",
-			logo: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
+			logo: "https://www.svgrepo.com/show/513273/book-opened.svg",
 			linkText: "View Project",
-			link: "/files/modeling_stars_with_fixed_lifetimes.pdf",
+			links: [{ url: "/files/modeling_stars_with_fixed_lifetimes.pdf" }],
 		},
 		{
 			title: "Training Meta Neural Networks Using Data Generated From an Agent Based Model.",
 			description:
 				"Meta neural networks enable rapid adaptation to new tasks by leveraging prior experience, while agent-based models simulate complex systems through interactions of autonomous agents. This research project looks at an initial investigation of techniques for training meta neural networks using agent-based models.",
 			// logo: "https://info.arxiv.org/brand/images/brand-logomark-primary-large.jpg",
-			logo: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
+			logo: "https://www.svgrepo.com/show/513273/book-opened.svg",
 			linkText: "View Project",
-			link: "/files/meta_abm.pdf",
+			links: [{ url: "/files/meta_abm.pdf" }],
 		},
 		{
 			title: "Recurrent Compact Quantum Groups.",
 			description:
 				"This research focuses on developing a notion of recurrence for compact quantum groups.",
 			// logo: "https://info.arxiv.org/brand/images/brand-logomark-primary-large.jpg",
-			logo: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
+			logo: "https://www.svgrepo.com/show/513273/book-opened.svg",
 			linkText: "View Project",
-			link: "/files/recurrent_quantum_groups.pdf",
+			links: [{ url: "/files/recurrent_quantum_groups.pdf" }],
 		},
 		{
 			title: "Using Cascaded Jaynes-Cummings Systems to Distinguish Between Pulses With One and Two Photons.",
 			description:
 				"Photon sorters are important for enabling precise control and manipulation of quantum light states. This research project investigates numeric simulations of photon sorters based on Jaynes-Cummings non-linear optical systems.",
 			// logo: "https://info.arxiv.org/brand/images/brand-logomark-primary-large.jpg",
-			logo: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
+			logo: "https://www.svgrepo.com/show/513273/book-opened.svg",
 			linkText: "View Project",
-			link: "/files/photon_sorting.pdf",
+			links: [{ url: "/files/photon_sorting.pdf" }],
 		},
 	],
 };

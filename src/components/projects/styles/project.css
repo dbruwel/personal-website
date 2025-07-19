@@ -65,6 +65,72 @@
 	font-weight: 700;
 }
 
+.project-modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+.project-modal-content {
+	background-color: #fff;
+	padding: 25px;
+	border-radius: 8px;
+	max-width: 400px;
+	width: 100%;
+	position: relative;
+	margin: 20px;
+}
+
+.project-modal-content a {
+	text-decoration: none;
+}
+
+.project-modal-link {
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	color: var(--secondary-color);
+	font-size: 14px;
+	font-weight: 700;
+	padding: 10px 0;
+}
+
+.project-modal-link:hover {
+	color: var(--link-color);
+	transition: color 0.3s ease-in-out;
+}
+
+.project-modal-link-icon {
+	padding-left: 5px;
+	font-size: 20px;
+}
+
+.project-modal-link-text {
+	padding-left: 20px;
+	font-weight: 700;
+}
+
+.project-modal-close-button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 30px;
+	height: 30px;
+	border: none;
+	background: transparent;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	color: var(--secondary-color);
+}
+
 @media (max-width: 600px) {
 	/* .project {
 		height: 500px;
