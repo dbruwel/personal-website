@@ -12,14 +12,10 @@ const Project = (props) => {
 
 	const preventScroll = (e) => e.preventDefault();
 
-	const handleClick = (e) => {
-		e.preventDefault();
-		if (links.length === 1) {
-			window.location.href = links[0].url;
-		} else {
-			setModalOpen(true);
-		}
-	};
+	// A project with a single destination is a real link so crawlers (and
+	// middle-click / open-in-new-tab) can follow it. Only the multi-destination
+	// case needs a scripted trigger, since it opens a chooser rather than navigating.
+	const singleLink = links.length === 1 ? links[0].url : null;
 
 	useEffect(() => {
 		const handleKeyDown = (e) => {
@@ -51,24 +47,47 @@ const Project = (props) => {
 		};
 	}, [modalOpen]);
 
+	const projectBody = (
+		<div className="project-container">
+			<div className="project-logo">
+				<img src={logo} alt="logo" />
+			</div>
+			<h2 className="project-title">{title}</h2>
+			<div className="project-description">{description}</div>
+			<div className="project-link">
+				<div className="project-link-icon">
+					<FontAwesomeIcon icon={faLink} />
+				</div>
+
+				<div className="project-link-text">{linkText}</div>
+			</div>
+		</div>
+	);
+
 	return (
 		<React.Fragment>
-			<div className="project" onClick={handleClick} style={{ cursor: 'pointer' }}>
-				<div className="project-container">
-					<div className="project-logo">
-						<img src={logo} alt="logo" />
-					</div>
-					<div className="project-title">{title}</div>
-					<div className="project-description">{description}</div>
-					<div className="project-link">
-						<div className="project-link-icon">
-							<FontAwesomeIcon icon={faLink} />
-						</div>
-
-						<div className="project-link-text">{linkText}</div>
-					</div>
+			{singleLink ? (
+				<a className="project" href={singleLink}>
+					{projectBody}
+				</a>
+			) : (
+				<div
+					className="project"
+					style={{ cursor: 'pointer' }}
+					role="button"
+					tabIndex={0}
+					aria-haspopup="dialog"
+					onClick={() => setModalOpen(true)}
+					onKeyDown={(e) => {
+						if (e.key === 'Enter' || e.key === ' ') {
+							e.preventDefault();
+							setModalOpen(true);
+						}
+					}}
+				>
+					{projectBody}
 				</div>
-			</div>
+			)}
 
 			{modalOpen && (
 				<div className="project-modal-overlay" onClick={() => setModalOpen(false)}>

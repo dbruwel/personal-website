@@ -6,6 +6,7 @@ import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 
 import INFO from "../data/user";
+import { SITE_URL } from "../data/seo";
 
 import "./styles/acknowledgments.css";
 
@@ -19,6 +20,7 @@ const Acknowledgments = () => {
 		<React.Fragment>
 			<Helmet>
 				<title>{`Acknowledgments | ${INFO.main.title}`}</title>
+				<link rel="canonical" href={`${SITE_URL}/acknowledgments`} />
 			</Helmet>
 
 			<div className="page-content">
@@ -33,9 +35,9 @@ const Acknowledgments = () => {
 					<div className="acknowledgments-container" style={{ flex: 1 }}>
 						<div className="acknowledgments-main">
 							<div>
-								<div className="title acknowledgments-title">
+								<h1 className="title acknowledgments-title">
 									Acknowledgments
-								</div>
+								</h1>
 								<div className="subtitle acknowledgments-subtitle">
 									<p>Some assets and elements of this website are not my own—I would like to credit their original authors below.</p>
 									<ul>

@@ -8,7 +8,7 @@ import Socials from "../components/about/socials";
 import ContactForm from "../components/contact/contactForm";
 
 import INFO from "../data/user";
-import SEO from "../data/seo";
+import SEO, { SITE_URL } from "../data/seo";
 
 import "./styles/contact.css";
 
@@ -28,6 +28,7 @@ const Contact = () => {
 					name="keywords"
 					content={currentSEO.keywords.join(", ")}
 				/>
+				<link rel="canonical" href={`${SITE_URL}/contact`} />
 			</Helmet>
 
 			<div className="page-content">
@@ -40,9 +41,9 @@ const Contact = () => {
 					</div>
 
 					<div className="contact-container">
-						<div className="title contact-title">
+						<h1 className="title contact-title">
 							Get in Touch.
-						</div>
+						</h1>
 
 						<div className="subtitle contact-subtitle">
 							I'm open to freelance work, collaborations, and passion projects—not limited to marketing or logistics. I'm always interested in applying my experience to new domains. If you have an interesting challenge, I'd love to hear about it.

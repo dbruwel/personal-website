@@ -20,7 +20,7 @@ const Works = () => {
 								className="work-image"
 							/>
 							<div className="work-element">
-								<div className="work-title">Atomic212&deg;</div>
+								<h3 className="work-title">Atomic212&deg;</h3>
 								<div className="work-details">
 									<div className="work-subtitle">Data Scientist</div>
 									<div className="work-duration">2023 - Present</div>

@@ -15,7 +15,7 @@ const INFO = {
 	},
 
 	homepage: {
-		title: "Hi, I'm Daniel,",
+		title: "Hi, I'm Daniel Bruwel,",
 		description:
 			`I’m open to freelance work, collaborations, and passion projects.
 			I’m a mathematician with a background in pure maths and physics, completing further study, and now working in applied maths and data science—mainly in marketing and logistics. I focus is on understanding systems, not just fitting models to data. I believe that good models should explain how things work, not just describe patterns.

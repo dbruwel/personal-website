@@ -16,7 +16,7 @@ const Article = (props) => {
 					<div className="homepage-article-date">
 						|&nbsp;&nbsp;&nbsp;{date}
 					</div>
-					<div className="homepage-article-title">{title}</div>
+					<h2 className="homepage-article-title">{title}</h2>
 					<div className="homepage-article-description">
 						{description}
 					</div>

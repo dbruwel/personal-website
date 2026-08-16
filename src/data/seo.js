@@ -1,3 +1,5 @@
+export const SITE_URL = "https://daniel.bruwel.com";
+
 const SEO = [
 	{
 		page: "home",

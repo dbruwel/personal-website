@@ -11,6 +11,13 @@
 	text-decoration: none;
 }
 
+/* Single-destination cards render as <a>; keep them laid out like the old <div> */
+a.project {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+
 .project:hover {
 	background: #fafafa;
 	opacity: 1;
@@ -39,7 +46,7 @@
 	color: var(--primary-color);
 	font-size: 16px;
 	padding-top: 15px;
-	margin-bottom: 1em;
+	margin: 0 0 1em;
 	font-weight: 700;
 }
 

@@ -7,7 +7,7 @@ import Logo from "../components/common/logo";
 import Article from "../components/homepage/article";
 
 import INFO from "../data/user";
-import SEO from "../data/seo";
+import SEO, { SITE_URL } from "../data/seo";
 import myArticles from "../data/articles";
 
 import "./styles/articles.css";
@@ -28,6 +28,7 @@ const Articles = () => {
 					name="keywords"
 					content={currentSEO.keywords.join(", ")}
 				/>
+				<link rel="canonical" href={`${SITE_URL}/articles`} />
 			</Helmet>
 
 			<div className="page-content">
@@ -40,9 +41,9 @@ const Articles = () => {
 					</div>
 
 					<div className="articles-main-container">
-						<div className="title articles-title">
+						<h1 className="title articles-title">
 							{INFO.articles.title}
-						</div>
+						</h1>
 
 						<div className="subtitle articles-subtitle">
 							{INFO.articles.description}

@@ -6,6 +6,7 @@ import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 
 import INFO from "../data/user";
+import { SITE_URL } from "../data/seo";
 
 import "./styles/privacy_policy.css";
 
@@ -19,6 +20,7 @@ const PrivacyPolicy = () => {
 		<React.Fragment>
 			<Helmet>
 				<title>{`Privacy Policy | ${INFO.main.title}`}</title>
+				<link rel="canonical" href={`${SITE_URL}/privacy_policy`} />
 			</Helmet>
 
 			<div className="page-content">
@@ -33,9 +35,9 @@ const PrivacyPolicy = () => {
 					<div className="privacy-policy-container" style={{ flex: 1 }}>
 						<div className="privacy-policy-main">
 							<div>
-								<div className="title privacy-policy-title">
+								<h1 className="title privacy-policy-title">
 									Privacy Policy
-								</div>
+								</h1>
 
 								<div className="subtitle privacy-policy-subtitle">
 									<p>

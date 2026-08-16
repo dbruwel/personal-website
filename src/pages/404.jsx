@@ -27,9 +27,9 @@ const Notfound = () => {
 					</div>
 					<div className="notfound-container">
 						<div className="notfound-message">
-							<div className="notfound-title">
+							<h1 className="notfound-title">
 								Oops! <FontAwesomeIcon icon={faFaceSadTear} />
-							</div>
+							</h1>
 							<div className="not-found-message">
 								We can't seem to find the page you're looking
 								for.

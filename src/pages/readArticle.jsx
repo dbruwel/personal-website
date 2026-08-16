@@ -12,6 +12,7 @@ import Logo from "../components/common/logo";
 
 import INFO from "../data/user";
 import myArticles from "../data/articles";
+import { SITE_URL } from "../data/seo";
 
 import "./styles/readArticle.css";
 
@@ -37,6 +38,7 @@ const ReadArticle = () => {
 				<title>{`${article().title} | ${INFO.main.title}`}</title>
 				<meta name="description" content={article().description} />
 				<meta name="keywords" content={article().keywords.join(", ")} />
+				<link rel="canonical" href={`${SITE_URL}/article/${slug}`} />
 			</Helmet>
 
 			<div className="page-content">
@@ -53,7 +55,16 @@ const ReadArticle = () => {
 						<div className="read-article-back">
 							<div
 								className="read-article-back-button"
+								role="button"
+								tabIndex={0}
+								aria-label="Go back"
 								onClick={() => navigate(-1)}
+								onKeyDown={(e) => {
+									if (e.key === "Enter" || e.key === " ") {
+										e.preventDefault();
+										navigate(-1);
+									}
+								}}
 							>
 								<FontAwesomeIcon
 									style={{ fontSize: "10px" }}
@@ -69,9 +80,9 @@ const ReadArticle = () => {
 								</div>
 							</div>
 
-							<div className="title read-article-title">
+							<h1 className="title read-article-title">
 								{article().title}
-							</div>
+							</h1>
 
 							<div className="read-article-body">
 								<ArticleStyle>{article().body}</ArticleStyle>

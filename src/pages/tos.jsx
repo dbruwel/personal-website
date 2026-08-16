@@ -6,6 +6,7 @@ import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 
 import INFO from "../data/user";
+import { SITE_URL } from "../data/seo";
 
 import "./styles/tos.css";
 
@@ -19,6 +20,7 @@ const TermsOfService = () => {
 		<React.Fragment>
 			<Helmet>
 				<title>{`Terms of Service | ${INFO.main.title}`}</title>
+				<link rel="canonical" href={`${SITE_URL}/tos`} />
 			</Helmet>
 
 			<div className="page-content">
@@ -33,9 +35,9 @@ const TermsOfService = () => {
 					<div className="tos-container" style={{ flex: 1 }}>
 						<div className="tos-main">
 							<div>
-								<div className="title tos-title">
+								<h1 className="title tos-title">
 									Terms of Service
-								</div>
+								</h1>
 
 								<div className="subtitle tos-subtitle">
 									<p>

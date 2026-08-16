@@ -107,3 +107,22 @@
 		width: 80%;
 	}
 }
+
+/* Semantic headings that render exactly like the inline <strong> they replaced */
+.resume-section-heading {
+	display: inline;
+	font-size: 1.1em;
+	font-weight: 700;
+	line-height: inherit;
+	color: black;
+	margin: 0;
+}
+
+.resume-entry-heading {
+	display: inline;
+	font-size: inherit;
+	font-weight: 700;
+	line-height: inherit;
+	color: inherit;
+	margin: 0;
+}

@@ -123,3 +123,13 @@
 		width: 80%;
 	}
 }
+
+/* Semantic section headings that render exactly like the inline <strong> they replaced */
+.about-section-heading {
+	display: inline;
+	font-size: inherit;
+	font-weight: 700;
+	line-height: inherit;
+	color: inherit;
+	margin: 0;
+}

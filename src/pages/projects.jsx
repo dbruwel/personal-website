@@ -7,7 +7,7 @@ import Logo from "../components/common/logo";
 import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
-import SEO from "../data/seo";
+import SEO, { SITE_URL } from "../data/seo";
 
 import "./styles/projects.css";
 
@@ -27,6 +27,7 @@ const Projects = () => {
 					name="keywords"
 					content={currentSEO.keywords.join(", ")}
 				/>
+				<link rel="canonical" href={`${SITE_URL}/projects`} />
 			</Helmet>
 
 			<div className="page-content">
@@ -38,9 +39,9 @@ const Projects = () => {
 						</div>
 					</div>
 					<div className="projects-container">
-						<div className="title projects-title">
+						<h1 className="title projects-title">
 							Here are some projects I've worked on.
-						</div>
+						</h1>
 
 						<div className="subtitle projects-subtitle">
 							These include public reasearch projects both affiliated and unaffiliated, personal and passion projects, and some things I've done just for fun. Feel free to check them out, most of them link to either a Github repository or an academic style paper. Some of these are unpolished or works in progress, but I hope you find them interesting nonetheless.
