@@ -28,6 +28,7 @@ const Articles = () => {
 					name="keywords"
 					content={currentSEO.keywords.join(", ")}
 				/>
+				<meta property="og:url" content={`${SITE_URL}/articles`} />
 				<link rel="canonical" href={`${SITE_URL}/articles`} />
 			</Helmet>
 
@@ -51,17 +52,16 @@ const Articles = () => {
 
 						<div className="articles-container">
 							<div className="articles-wrapper">
-								{myArticles.map((article, index) => (
+								{myArticles.map((article) => (
 									<div
 										className="articles-article"
-										key={(index + 1).toString()}
+										key={article.slug}
 									>
 										<Article
-											key={(index + 1).toString()}
-											date={article().date}
-											title={article().title}
-											description={article().description}
-											link={"/article/" + (index + 1)}
+											date={article.displayDate}
+											title={article.title}
+											description={article.description}
+											link={"/article/" + article.slug}
 										/>
 									</div>
 								))}

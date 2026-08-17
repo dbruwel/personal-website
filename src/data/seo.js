@@ -4,43 +4,43 @@ const SEO = [
 	{
 		page: "home",
 		description:
-			"I’m a mathematician with a background in pure maths and physics. I’m open to freelance work, collaborations, and passion projects.",
-		keywords: ["Bruwel", "Daniel Bruwel", "Data Science", "Mathematics"],
+			"I am a mathematician, researcher, and data scientist completing an MPhil in Computational Topology at The University of Sydney and working in marketing science.",
+		keywords: ["Bruwel", "Daniel Bruwel", "Data Science", "Mathematics", "Computational Topology"],
 	},
 
 	{
 		page: "about",
 		description:
-			"My work spans applied maths and data science, particularly in marketing and logistics. I take a structured, mathematical approach to problem-solving.",
-		keywords: ["Bruwel", "Daniel Bruwel", "Data Science", "Mathematics"],
+			"My work bridges academic research and applied industry problem-solving, with a focus on building mathematical architectures from the ground up.",
+		keywords: ["Bruwel", "Daniel Bruwel", "Data Science", "Mathematics", "Applied Mathematics"],
 	},
 
 	{
 		page: "resume",
 		description:
-			"Optimization, Differential Equations, Stochastic Calculus, Variational Calculus, Probability Theory...",
-		keywords: ["Bruwel", "Daniel Bruwel", "Data Science", "Mathematics"],
+			"Technical resume covering Applied & Computational Mathematics, Mathematical Software, and Custom Media Mix Modeling.",
+		keywords: ["Bruwel", "Daniel Bruwel", "Data Science", "Mathematics", "Resume"],
 	},
 
 	{
 		page: "projects",
 		description:
-			"Here are some projects I've worked on. These include public reasearch projects both affiliated and unaffiliated, personal and passion projects, and some things I've done just for fun.",
-		keywords: ["Bruwel", "Daniel Bruwel", "Data Science", "Mathematics"],
+			"A collection of my research projects, both affiliated and unaffiliated, spanning pure mathematics, physics, and applied data science.",
+		keywords: ["Bruwel", "Daniel Bruwel", "Data Science", "Mathematics", "Research Projects"],
 	},
 
 	{
 		page: "articles",
 		description:
-			"This is a collection of things I've learned or figured out in data science and mathemathics that I think might be useful to others in the field. Some of it’s technical, some of it’s more general.",
-		keywords: ["Bruwel", "Daniel Bruwel", "Data Science", "Mathematics"],
+			"This is a collection of things I've learned or figured out in data science and mathematics that I think might be useful to others in the field.",
+		keywords: ["Bruwel", "Daniel Bruwel", "Data Science", "Mathematics", "Articles"],
 	},
 
 	{
 		page: "contact",
 		description:
-			"I'm always interested to see how my experience can be applied to different domains. If you have an interesting challenge, I’d love to hear about it.",
-		keywords: ["Bruwel", "Daniel Bruwel", "Data Science", "Mathematics"],
+			"I am always interested in applying my mathematical background to new domains. If you have an unstructured problem, I’d love to hear about it.",
+		keywords: ["Bruwel", "Daniel Bruwel", "Data Science", "Mathematics", "Contact"],
 	},
 ];
 

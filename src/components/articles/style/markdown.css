@@ -1,0 +1,159 @@
+@import "../../../data/styles.css";
+
+.markdown-body {
+	font-family: system-ui;
+	font-size: 16px;
+	line-height: 30px;
+	color: #52525b;
+	overflow-wrap: break-word;
+}
+
+.markdown-body > *:first-child {
+	margin-top: 0;
+}
+
+.markdown-body > *:last-child {
+	margin-bottom: 0;
+}
+
+.markdown-body p {
+	margin: 0 0 20px 0;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4 {
+	font-family: var(--secondary-font);
+	color: var(--primary-color);
+	line-height: 1.35;
+	margin: 40px 0 15px 0;
+}
+
+.markdown-body h1 {
+	font-size: 28px;
+}
+
+.markdown-body h2 {
+	font-size: 24px;
+}
+
+.markdown-body h3 {
+	font-size: 20px;
+}
+
+.markdown-body h4 {
+	font-size: 17px;
+}
+
+.markdown-body strong {
+	color: var(--primary-color);
+}
+
+.markdown-body a {
+	color: var(--link-color);
+	text-decoration: none;
+}
+
+.markdown-body a:hover {
+	text-decoration: underline;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+	margin: 0 0 20px 0;
+	padding-left: 25px;
+}
+
+.markdown-body li {
+	margin-bottom: 8px;
+}
+
+.markdown-body li > ul,
+.markdown-body li > ol {
+	margin: 8px 0 0 0;
+}
+
+.markdown-body blockquote {
+	margin: 0 0 20px 0;
+	padding: 2px 0 2px 20px;
+	border-left: 2px solid var(--quaternary-color);
+	color: var(--secondary-color);
+	font-style: italic;
+}
+
+.markdown-body hr {
+	border: none;
+	border-top: 1px solid var(--quaternary-color);
+	margin: 35px 0;
+}
+
+.markdown-body img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 5px;
+	margin: 10px 0;
+}
+
+.markdown-body code {
+	font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+	font-size: 14px;
+	background-color: #f4f4f5;
+	border-radius: 4px;
+	padding: 2px 5px;
+}
+
+.markdown-body pre {
+	background-color: #f4f4f5;
+	border-radius: 6px;
+	padding: 15px 18px;
+	margin: 0 0 20px 0;
+	overflow-x: auto;
+	line-height: 1.6;
+}
+
+.markdown-body pre code {
+	background-color: transparent;
+	padding: 0;
+}
+
+.markdown-body table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 0 0 20px 0;
+	font-size: 15px;
+	display: block;
+	overflow-x: auto;
+}
+
+.markdown-body th,
+.markdown-body td {
+	border: 1px solid var(--quaternary-color);
+	padding: 8px 12px;
+	text-align: left;
+}
+
+.markdown-body th {
+	color: var(--primary-color);
+	background-color: #fafafa;
+}
+
+/* ------- math ------- */
+
+/* Display equations get room to breathe, and scroll instead of
+   overflowing the page when they are wider than the container. */
+.markdown-body .katex-display {
+	margin: 25px 0;
+	padding: 5px 0;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.markdown-body .katex {
+	font-size: 1.05em;
+	color: var(--primary-color);
+}
+
+.markdown-body .katex-display > .katex {
+	font-size: 1.15em;
+}

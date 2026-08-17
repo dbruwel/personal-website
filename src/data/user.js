@@ -17,45 +17,33 @@ const INFO = {
 	homepage: {
 		title: "Hi, I'm Daniel Bruwel,",
 		description:
-			`I’m open to freelance work, collaborations, and passion projects.
-			I’m a mathematician with a background in pure maths and physics, completing further study, and now working in applied maths and data science—mainly in marketing and logistics. I focus is on understanding systems, not just fitting models to data. I believe that good models should explain how things work, not just describe patterns.
-			I’ve built large-scale marketing mix models and developed a unique approach to forecasting count data. My background in geometry shapes the way I think—I like to start with the underlying mechanics of a system before bringing in data.
-			Outside of work, I spend a lot of time in the water—scuba diving and generally trying to be as close to the ocean as possible.
-			The image shown was taken during a quantum computing project I worked on at the University of Sydney. It displays the results of a dose test where we evaluated different exposure parameters on a new type of photoresist and evaluated the quality of the features.`,
+			`I am a mathematician and researcher. I’m currently completing my MPhil in Computational Topology at The University of Sydney, while also working as a Technical Lead in marketing science at Atomic212.
+			As a mathematician in the data science industry, I typically like to focus on understanding and abstracting the underlying mechanics of systems to build structural / microfoundations models, rather than relying purely on statistical curve fitting.
+      I am always open and keen for research collaborations and complex analytical projects, it doesn't have to be in the marketing industry.
+      Outside of mathematics, I spend most of my time scuba diving and staying close to the ocean.
+      The image shown was taken during a quantum computing project at the University of Sydney, displaying the results of a dose test for exposure parameters on a new type of photoresist.`,
 	},
 
 	about: {
-		title: "I'm a mathematician and data scientist",
+		title: "I'm a Mathematician & Researcher",
 		description: [
 			{
-				subtitle: "",
-				content: "with a background in pure mathematics and physics, and I'm currently undertaking further study computational topology at the University of Sydney. My applied work spans mathematics and data science, with a focus on marketing and logistics. I take a structured, mathematical approach to problem-solving—whether that's building models for marketing efficiency, forecasting demand, or tackling complex systems."
+				subtitle: "Background",
+				content: "I have a background in pure mathematics and physics, my current research focuses on computational topology at The University of Sydney with Dr. Spreer and Prof. Altmann, specifically on codimension 2 surfaces as obstructions to perfect Morse matchings. Alongside my academic work, I act as a Technical Lead in the media industry, specifically in marketing science."
 			},
 			{
-				subtitle: "What I’m Open To",
-				content: "I'm open to freelance work, collaborations, and passion projects—not limited to marketing or logistics. I'm always interested in applying my experience to new domains. If you have an interesting challenge, I'd love to hear about it."
+				subtitle: "My Approach to Applied Problems",
+				content: `When addressing applied problems, my focus is on defining the fundamental mechanics of the system. Rather than relying on standard statistical curve fitting, I prefer to build mechanistic models based on explicit microfoundations. This may be to establishing theoretical bounds for a system's behavior or model its generative processes. I typically prioritise building a rigorous / abstract mathematical architecture before introducing observational data.`
 			},
 			{
-				subtitle: "How I Can and Can’t Help",
+				subtitle: "Applied Focus Areas",
 				content:
-					`As a mathematician, I'm most useful for solving unique problems that don’t have off-the-shelf solutions. In practice, this means building models to describe complex systems (like groups of people, markets, or mechanical systems), optimising processes (marketing activity, control systems, strategies), or interpreting and communicating technical ideas for broader audiences (e.g. research papers, white papers).
-				While this is my core skill set—and what makes me most unique—I’ve also developed a lot of technical competence through various projects. I can help build SaaS platforms, design systems, deploy applications, set up cloud infrastructure, and build database architecture.
-				What I don't specialise in is data wrangling and dashboarding—data analysis isn't my strength. I can do it, but I don't enjoy it and I'm not the best person for that kind of work. If you need someone to build a model, optimise a system, or interpret a paper, I'm your person. If you need dashboards or summaries, I’m probably not the best fit—but I can recommend great people for it.`
+					`I am best suited for problems that require building theoretical models from the ground up or proving the limitations and properties of such models. I frequently prototype these models (using Python, JAX, and PyMC) and present findings in a variety of different ways. However, I generally step back when a project shifts primarily toward routine data engineering, pipeline maintenance, or standard reporting.`
 			},
 			{
-				subtitle: "How I Solve Problems",
-				content:
-					`I approach problems from two angles:
-				1. Understanding the system – I think like a physicist, focusing on how a system’s components interact. Before applying machine learning or statistics, I build a theoretical model to capture the system's core mechanics.
-				2. Generalising the problem – My background in pure maths helps me frame problems abstractly. I aim to create adaptable models that generalise across different situations, not just fit a single dataset.
-				For example, when working on marketing mix models, I don’t assume saturation or adstock effects upfront. I build a model that reflects the real dynamics between advertising and sales, and let those effects emerge naturally. This ensures the model explains the system, rather than just fitting assumptions.`
-			},
-			{
-				subtitle: "How I Work",
-				content:
-					`My workflow starts with exploring and understanding the problem in depth. I follow this with prototyping and iterative experimentation to learn how the system behaves. Once I have a strong conceptual understanding, I develop a solution—often over several iterations.
-				Once the model is ready, the most important step is making the results useful. That might be through a report or presentation, but I also build and deploy web apps to make results interactive. While I'm not a designer, I can deliver clean, user-friendly prototypes that can be refined or handed off to a dev team.`
-			},
+				subtitle: "Collaborations",
+				content: "I am always interested in research or applying mathematical frameworks to new domains. If you are working on an unstructured problem, a research collaboration, or a freelance project that requires structural modeling, I would be keen to discuss it."
+			}
 		],
 	},
 
@@ -64,61 +52,38 @@ const INFO = {
 		education: [
 			{
 				institute: "The University of Sydney",
-				degree: "Bachelor of Science (Advanced)",
-				details: "Mathematics Major, Physics Major, Astrophysics Program, Dalyell Scholar",
-				graduation: "2022-2024",
-			},
-			{
-				institute: "The University of Sydney",
-				degree: "Science Undergraduate Non-Degree",
-				details: "Denison Research",
-				graduation: "2025 (Complete)",
+				degree: "Master of Philosophy (MPhil) in Computational Topology",
+				details: "Thesis: Investigating codimension 2 manifolds as obstructions to perfect Morse matchings.",
+				graduation: "2026 - Present",
 			},
 			{
 				institute: "The University of Sydney",
 				degree: "Bachelor of Science (Honours)",
-				details: "Pure Mathematics — Modern Computational Approaches to Targeted Searches for 3-Sphere Triangulations with Connections to Knot Theory",
-				graduation: "2025 (Expected)",
-			},
-		],
-		certifications: [
-
-		],
-		skills: [
-			{
-				"title": "Applied Mathematics",
-				"description": "Optimization, Differential Equations, Stochastic Calculus, Variational Calculus, Probability Theory, Measure Theory, Mathematical Statistics, Time Series Analysis, Computational Mathematics, State-Space Modeling, Filtering and Smoothing, Dynamic Systems, Optimal Control Theory, Survival Analysis, Bayesian Inference, Monte Carlo Methods, Graph Theory, Decision Theory, Information Theory, Information Geometry, Game Theory"
-			},
-			{
-				"title": "Programming Languages",
-				"description": "Python, Stan, R, SQL, MATLAB, C++"
-			},
-			{
-				"title": "Tools",
-				"description": "Git, Docker, Jupyter, VS Code, Google Cloud Compute, Poetry"
-			},
-			{
-				"title": "Libraries",
-				"description": "Pandas, NumPy, SciPy, Matplotlib, Seaborn, Scikit-learn, PyMC, XGBoost, LightGBM, Dask, RAPIDS, Optuna, NetworkX, Statsmodels, Streamlit, TensorFlow, Keras, PyTorch"
-			},
-			{
-				"title": "Web Prototyping",
-				"description": "HTML, CSS, JavaScript, React.js"
-			},
-			{
-				"title": "Cloud & Deployment",
-				"description": "Google Cloud Compute (GCE), Google Kubernetes Engine (GKE), Google App Engine (GAE), Google Cloud Storage, BigQuery"
-			},
-			{
-				"title": "AI & NLP",
-				"description": "LangChain, Large Language Models (LLMs), Natural Language Processing (NLP), GPT, Transformers, Reinforcement Learning, Autoencoders, Generative Adversarial Networks (GAN), Echo State Networks (ESN), Liquid Neural Networks (LNN), Convolutional Neural Networks (CNN), Recurrent Neural Networks (RNN), Long Short-Term Memory (LSTM), Gated Recurrent Unit (GRU), Mamba"
-			},
-			{
-				"title": "Others",
-				"description": "LaTeX, Mathematica, Maple, Magma, SageMath, Regina"
+				details: "Pure Mathematics & Physics (Astrophysics Program, Dalyell Scholar). Honours Thesis: Modern Computational Approaches to Targeted Searches for 3-Sphere Triangulations.",
+				graduation: "2022 - 2025",
 			}
 		],
-		awards: [
+		publications: [
+			{
+				title: "Transformer approaches to generating 3-manifold triangulations",
+				journal: "ArXiv",
+				year: "2026",
+				details: "Currently in preparation / Under review."
+			}
+		],
+		conferences_and_workshops: [
+			{
+				title: "AMSI Winter School",
+				year: "2026",
+				details: "Attended programs on Geometric Analysis. Awarded Winter School Grant.",
+			},
+			{
+				title: "AMSI Summer School",
+				year: "2026",
+				details: "Attended programs on Computational Topology and TDA.",
+			}
+		],
+		awards_and_grants: [
 			{
 				title: "Denison Research Scholarship",
 				year: "2024",
@@ -144,19 +109,32 @@ const INFO = {
 				year: "2022",
 			},
 		],
+		technical_skills: [
+			{
+				title: "Applied & Computational Mathematics",
+				description: "Optimization, State-Space Modeling, Bayesian Inference, Topological Data Analysis (TDA), Information Geometry, Optimal Control Theory"
+			},
+			{
+				title: "Languages & Frameworks",
+				description: "Python (JAX, PyMC, PyTorch), R, SQL, MATLAB, C++"
+			},
+			{
+				title: "Mathematical Software",
+				description: "Magma, SageMath, Regina"
+			},
+		],
 	},
 
 	articles: {
-		title: "Articles",
+		title: "Notes & Articles",
 		description:
-			"This is a collection of things I've learned or figured out in data science and mathemathics that I think might be useful to others in the field. Some of it’s technical, some of it’s more general. I try to keep it practical and clear, though my personal perspective is presented in a few of these. These are my own thoughts and don’t necessarily reflect the views of the companies I work with. Many of these are in-progress, so if you have any feedback or suggestions, please let me know.",
+			"This sections contains a collection of notes and articles. These mainly serve as a way for me to put down my informal thoughts, or ideas that don't warrant formal writeups. Many of these are ongoing drafts or living documents; feedback and discussion are always welcome.",
 	},
 
 	projects: [
 		{
 			title: "Optimal Policy Selection Under Bilateral Preferences",
 			description: <p><em>Work in progress</em><br />Bilateral preference systems are common in many real world situations. This project explores some methods for selecting optimal policy sets in such systems.</p>,
-			// Bilateral preference systems are common in many real-world situations. This project explores some methods for selecting the optimal policy set in such systems.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			linkText: "View Project",
 			links: [{ url: "https://github.com/dbruwel/optimal-bilateral-preferences" }],
@@ -171,7 +149,6 @@ const INFO = {
 		{
 			title: "Computing Resonances of Chaotic Systems via Chebyshev Polynomials and Hofbauer Extensions.",
 			description: <p>The transfer operator is critical for the study of dynamic systems. This research project focusses on a novel technique to compute the eigenvalues of the transfer operator for chaotic systems.</p>,
-			// logo: "https://info.arxiv.org/brand/images/brand-logomark-primary-large.jpg",
 			logo: "https://www.svgrepo.com/show/513273/book-opened.svg",
 			linkText: "View Project",
 			links: [
@@ -183,7 +160,6 @@ const INFO = {
 			title: "On the Automated Classification of Tidal Features in Galaxy Images.",
 			description:
 				"Tidal features in galaxies are critical to understanding long-term galactic formation. This research project combines classical and computer vision approaches to classify tidal features in galaxies.",
-			// logo: "https://info.arxiv.org/brand/images/brand-logomark-primary-large.jpg",
 			logo: "https://www.svgrepo.com/show/513273/book-opened.svg",
 			linkText: "View Project",
 			links: [{ url: "/files/tidal_feature_classification.pdf" }],
@@ -192,7 +168,6 @@ const INFO = {
 			title: "A Dynamic Model of Stellar Populations.",
 			description:
 				"This research project proposes a stellar evolution model inspired by the dynamic compartment modeling techniques used in epidemiology.",
-			// logo: "https://info.arxiv.org/brand/images/brand-logomark-primary-large.jpg",
 			logo: "https://www.svgrepo.com/show/513273/book-opened.svg",
 			linkText: "View Project",
 			links: [{ url: "/files/stellar_populations.pdf" }],
@@ -201,7 +176,6 @@ const INFO = {
 			title: "A Dynamic Model of Stellar Populations - Modeling Stars With Fixed Lifetimes.",
 			description:
 				"This research project further investigates dynamic compartment modeling techniques from epidemiology, applied to stellar evolution. This approach adjusts the model to account for fixed stellar lifetimes rather than a continuous lifetime distribution.",
-			// logo: "https://info.arxiv.org/brand/images/brand-logomark-primary-large.jpg",
 			logo: "https://www.svgrepo.com/show/513273/book-opened.svg",
 			linkText: "View Project",
 			links: [{ url: "/files/modeling_stars_with_fixed_lifetimes.pdf" }],
@@ -209,8 +183,7 @@ const INFO = {
 		{
 			title: "Training Meta Neural Networks Using Data Generated From an Agent Based Model.",
 			description:
-				"Meta neural networks enable rapid adaptation to new tasks by leveraging prior experience, while agent-based models simulate complex systems through interactions of autonomous agents. This research project looks at an initial investigation of techniques for training meta neural networks using agent-based models.",
-			// logo: "https://info.arxiv.org/brand/images/brand-logomark-primary-large.jpg",
+				"Meta neural networks enable rapid adaptation to new tasks by leveraging prior experience, while agent-based models simulate complex systems through interactions of autonomous agents. This project investigates the training meta neural networks using agent-based models.",
 			logo: "https://www.svgrepo.com/show/513273/book-opened.svg",
 			linkText: "View Project",
 			links: [{ url: "/files/meta_abm.pdf" }],
@@ -218,8 +191,7 @@ const INFO = {
 		{
 			title: "Recurrent Compact Quantum Groups.",
 			description:
-				"This research focuses on developing a notion of recurrence for compact quantum groups.",
-			// logo: "https://info.arxiv.org/brand/images/brand-logomark-primary-large.jpg",
+				"Gelfand duality motivates the existence of non commutative analogs of compact topological groups. This project investigates such objects and explores how the idea of recurrence can be applied to them.",
 			logo: "https://www.svgrepo.com/show/513273/book-opened.svg",
 			linkText: "View Project",
 			links: [{ url: "/files/recurrent_quantum_groups.pdf" }],
@@ -228,7 +200,6 @@ const INFO = {
 			title: "Using Cascaded Jaynes-Cummings Systems to Distinguish Between Pulses With One and Two Photons.",
 			description:
 				"Photon sorters are important for enabling precise control and manipulation of quantum light states. This research project investigates numeric simulations of photon sorters based on Jaynes-Cummings non-linear optical systems.",
-			// logo: "https://info.arxiv.org/brand/images/brand-logomark-primary-large.jpg",
 			logo: "https://www.svgrepo.com/show/513273/book-opened.svg",
 			linkText: "View Project",
 			links: [{ url: "/files/photon_sorting.pdf" }],

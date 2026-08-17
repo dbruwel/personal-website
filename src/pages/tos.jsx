@@ -20,6 +20,7 @@ const TermsOfService = () => {
 		<React.Fragment>
 			<Helmet>
 				<title>{`Terms of Service | ${INFO.main.title}`}</title>
+				<meta property="og:url" content={`${SITE_URL}/tos`} />
 				<link rel="canonical" href={`${SITE_URL}/tos`} />
 			</Helmet>
 

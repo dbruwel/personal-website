@@ -26,6 +26,7 @@ const Resume = () => {
 					name="keywords"
 					content={currentSEO.keywords.join(", ")}
 				/>
+				<meta property="og:url" content={`${SITE_URL}/resume`} />
 				<link rel="canonical" href={`${SITE_URL}/resume`} />
 			</Helmet>
 
@@ -46,27 +47,69 @@ const Resume = () => {
 								</h1>
 
 								<div className="subtitle resume-subtitle">
-									<h2 className="resume-section-heading">EDUCATION:</h2><br/>
+
+									{/* EDUCATION */}
+									<h2 className="resume-section-heading">EDUCATION:</h2><br />
 									{INFO.resume.education.map((edu, index) => (
 										<div key={index} style={{ marginBottom: '1em' }}>
-											<h3 className="resume-entry-heading">{edu.institute} &mdash; {edu.graduation}</h3><br/>
-											<em>{edu.degree}</em><br/>
-											{edu.details}<br/>
+											<h3 className="resume-entry-heading">{edu.institute} &mdash; {edu.graduation}</h3><br />
+											<em>{edu.degree}</em><br />
+											{edu.details}<br />
 										</div>
-									))} <br/>
-									<h2 className="resume-section-heading">TECHNICAL SKILLS:</h2><br/>
-									{INFO.resume.skills.map((skill, index) => (
+									))}
+									<br />
+
+									{/* PUBLICATIONS (Conditionally rendered if array is not empty) */}
+									{INFO.resume.publications && INFO.resume.publications.length > 0 && (
+										<>
+											<h2 className="resume-section-heading">PUBLICATIONS:</h2><br />
+											{INFO.resume.publications.map((pub, index) => (
+												<div key={index} style={{ marginBottom: '1em' }}>
+													<strong>{pub.title}</strong> &mdash; {pub.year}<br />
+													<em>{pub.journal}</em><br />
+													{pub.details}<br />
+												</div>
+											))}
+											<br />
+										</>
+									)}
+
+									{/* CONFERENCES & WORKSHOPS */}
+									{INFO.resume.conferences_and_workshops && INFO.resume.conferences_and_workshops.length > 0 && (
+										<>
+											<h2 className="resume-section-heading">CONFERENCES & WORKSHOPS:</h2><br />
+											{INFO.resume.conferences_and_workshops.map((conf, index) => (
+												<div key={index} style={{ marginBottom: '1em' }}>
+													<strong>{conf.title}</strong> &mdash; {conf.year}<br />
+													{conf.details}<br />
+												</div>
+											))}
+											<br />
+										</>
+									)}
+
+									{/* AWARDS & GRANTS */}
+									{INFO.resume.awards_and_grants && INFO.resume.awards_and_grants.length > 0 && (
+										<>
+											<h2 className="resume-section-heading">AWARDS & GRANTS:</h2><br />
+											{INFO.resume.awards_and_grants.map((award, index) => (
+												<div key={index} style={{ marginBottom: '0.5em' }}>
+													{award.title} &mdash; {award.year}<br />
+												</div>
+											))}
+											<br />
+										</>
+									)}
+
+									{/* TECHNICAL SKILLS */}
+									<h2 className="resume-section-heading">TECHNICAL SKILLS:</h2><br />
+									{INFO.resume.technical_skills.map((skill, index) => (
 										<div key={index} style={{ marginBottom: '1em' }}>
-											<h3 className="resume-entry-heading">{skill.title}</h3><br/>
-											{skill.description}<br/>
+											<h3 className="resume-entry-heading">{skill.title}</h3><br />
+											{skill.description}<br />
 										</div>
 									))}
-									<h2 className="resume-section-heading">PRIZES & DISTINCTIONS:</h2>
-									{INFO.resume.awards.map((award, index) => (
-										<div key={index}>
-											{award.title} &mdash; {award.year}<br/>
-										</div>
-									))}
+
 								</div>
 							</div>
 						</div>

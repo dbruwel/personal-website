@@ -27,6 +27,7 @@ const About = () => {
 					name="keywords"
 					content={currentSEO.keywords.join(", ")}
 				/>
+				<meta property="og:url" content={`${SITE_URL}/about`} />
 				<link rel="canonical" href={`${SITE_URL}/about`} />
 			</Helmet>
 

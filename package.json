@@ -18,18 +18,26 @@
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^13.4.0",
 		"@testing-library/user-event": "^13.5.0",
+		"katex": "^0.18.4",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-ga4": "^2.1.0",
 		"react-helmet": "^6.1.0",
+		"react-markdown": "^10.1.0",
 		"react-router-dom": "^6.11.1",
 		"react-scripts": "5.0.1",
+		"rehype-katex": "^7.0.1",
+		"remark-gfm": "^4.0.1",
+		"remark-math": "^6.0.0",
 		"styled-components": "^5.3.10",
 		"web-vitals": "^2.1.4"
 	},
 	"scripts": {
-		"start": "react-scripts start",
+		"articles": "node scripts/build-articles.mjs",
+		"start": "concurrently -k -n articles,web \"node scripts/build-articles.mjs --watch\" \"react-scripts start\"",
+		"prebuild": "npm run articles",
 		"build": "react-scripts build",
+		"pretest": "npm run articles",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
 	},
@@ -38,6 +46,17 @@
 			"react-app",
 			"react-app/jest"
 		]
+	},
+	"jest": {
+		"transformIgnorePatterns": [
+			"^.+\\.module\\.(css|sass|scss)$"
+		],
+		"moduleNameMapper": {
+			"^unist-util-visit-parents/do-not-use-color$": "unist-util-visit-parents/lib/color.js",
+			"^#minpath$": "vfile/lib/minpath.browser.js",
+			"^#minproc$": "vfile/lib/minproc.browser.js",
+			"^#minurl$": "vfile/lib/minurl.browser.js"
+		}
 	},
 	"browserslist": {
 		"production": [
@@ -54,5 +73,9 @@
 	"prettier": {
 		"useTabs": true,
 		"tabWidth": 4
+	},
+	"devDependencies": {
+		"concurrently": "^10.0.5",
+		"gray-matter": "^4.0.3"
 	}
 }

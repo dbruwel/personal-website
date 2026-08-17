@@ -20,6 +20,7 @@ const Acknowledgments = () => {
 		<React.Fragment>
 			<Helmet>
 				<title>{`Acknowledgments | ${INFO.main.title}`}</title>
+				<meta property="og:url" content={`${SITE_URL}/acknowledgments`} />
 				<link rel="canonical" href={`${SITE_URL}/acknowledgments`} />
 			</Helmet>
 

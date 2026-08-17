@@ -32,7 +32,7 @@ const Footer = () => {
 
 				<div className="footer-credits">
 					<div className="footer-credits-text">
-						© 2025 daniel@bruwel.com. All Rights Reserved.
+						© 2026 daniel@bruwel.com. All Rights Reserved.
 					</div>
 					<div className="footer-credits-text">
 						<ul className="footer-legal-link-list">

@@ -20,6 +20,7 @@ const PrivacyPolicy = () => {
 		<React.Fragment>
 			<Helmet>
 				<title>{`Privacy Policy | ${INFO.main.title}`}</title>
+				<meta property="og:url" content={`${SITE_URL}/privacy_policy`} />
 				<link rel="canonical" href={`${SITE_URL}/privacy_policy`} />
 			</Helmet>
 

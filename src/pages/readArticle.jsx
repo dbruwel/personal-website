@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import React, { Suspense, useEffect } from "react";
+import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
 
@@ -9,40 +9,52 @@ import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
+import Notfound from "./404";
 
 import INFO from "../data/user";
-import myArticles from "../data/articles";
+import { findArticle } from "../data/articles";
 import { SITE_URL } from "../data/seo";
 
 import "./styles/readArticle.css";
 
-let ArticleStyle = styled.div``;
+const ArticleStyle = styled.div`
+	${(props) => props.$css}
+`;
+
+// The markdown renderer pulls in KaTeX, which is only needed on this page.
+const Markdown = React.lazy(() => import("../components/articles/markdown"));
 
 const ReadArticle = () => {
 	const navigate = useNavigate();
 	let { slug } = useParams();
 
-	const article = myArticles[slug - 1];
+	const article = findArticle(slug);
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, [article]);
 
-	ArticleStyle = styled.div`
-		${article().style}
-	`;
+	if (!article) {
+		return <Notfound />;
+	}
+
+	// Old links addressed articles by number; send them to the named URL.
+	if (article.slug !== slug) {
+		return <Navigate to={`/article/${article.slug}`} replace />;
+	}
 
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`${article().title} | ${INFO.main.title}`}</title>
-				<meta name="description" content={article().description} />
-				<meta name="keywords" content={article().keywords.join(", ")} />
-				<link rel="canonical" href={`${SITE_URL}/article/${slug}`} />
+				<title>{`${article.title} | ${INFO.main.title}`}</title>
+				<meta name="description" content={article.description} />
+				<meta name="keywords" content={article.keywords.join(", ")} />
+				<meta property="og:url" content={`${SITE_URL}/article/${article.slug}`} />
+				<link rel="canonical" href={`${SITE_URL}/article/${article.slug}`} />
 			</Helmet>
 
 			<div className="page-content">
-				<NavBar />
+				<NavBar active="articles" />
 
 				<div className="content-wrapper">
 					<div className="read-article-logo-container">
@@ -76,16 +88,20 @@ const ReadArticle = () => {
 						<div className="read-article-wrapper">
 							<div className="read-article-date-container">
 								<div className="read-article-date">
-									{article().date}
+									{article.displayDate}
 								</div>
 							</div>
 
 							<h1 className="title read-article-title">
-								{article().title}
+								{article.title}
 							</h1>
 
 							<div className="read-article-body">
-								<ArticleStyle>{article().body}</ArticleStyle>
+								<ArticleStyle $css={article.style}>
+									<Suspense fallback={null}>
+										<Markdown>{article.body}</Markdown>
+									</Suspense>
+								</ArticleStyle>
 							</div>
 						</div>
 					</div>

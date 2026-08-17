@@ -79,6 +79,7 @@ const Homepage = () => {
 					name="keywords"
 					content={currentSEO.keywords.join(", ")}
 				/>
+				<meta property="og:url" content={`${SITE_URL}/`} />
 				<link rel="canonical" href={`${SITE_URL}/`} />
 			</Helmet>
 
@@ -162,17 +163,16 @@ const Homepage = () => {
 
 						<div className="homepage-after-title">
 							<div className="homepage-articles">
-								{myArticles.slice(0, 2).map((article, index) => (
+								{myArticles.slice(0, 2).map((article) => (
 									<div
 										className="homepage-article"
-										key={(index + 1).toString()}
+										key={article.slug}
 									>
 										<Article
-											key={(index + 1).toString()}
-											date={article().date}
-											title={article().title}
-											description={article().description}
-											link={"/article/" + (index + 1)}
+											date={article.displayDate}
+											title={article.title}
+											description={article.description}
+											link={"/article/" + article.slug}
 										/>
 									</div>
 								))}

@@ -28,6 +28,7 @@ const Contact = () => {
 					name="keywords"
 					content={currentSEO.keywords.join(", ")}
 				/>
+				<meta property="og:url" content={`${SITE_URL}/contact`} />
 				<link rel="canonical" href={`${SITE_URL}/contact`} />
 			</Helmet>
 
@@ -46,11 +47,11 @@ const Contact = () => {
 						</h1>
 
 						<div className="subtitle contact-subtitle">
-							I'm open to freelance work, collaborations, and passion projects—not limited to marketing or logistics. I'm always interested in applying my experience to new domains. If you have an interesting challenge, I'd love to hear about it.
+							I'm open to freelance work, collaborations, and passion projects—not limited to marketing. I'm always interested in applying my experience to new domains. If you have an interesting challenge, I'd love to hear about it.
 							Feel free to email me directly at&nbsp;
 							<a href={`mailto:${INFO.main.email}`} className="contact-link">
 								{INFO.main.email}
-							</a> or fill out the form below.
+							</a>, fill out the form below, or reach out on social media.
 						</div>
 					</div>
 
