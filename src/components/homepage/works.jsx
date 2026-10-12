@@ -16,13 +16,13 @@ const Works = () => {
 						<div className="work">
 							<img
 								src="./usyd-logo.png"
-								alt="atomic-logo"
+								alt="usyd-logo"
 								className="work-image"
 							/>
 							<div className="work-element">
 								<h3 className="work-title">University of Sydney</h3>
 								<div className="work-details">
-									<div className="work-subtitle">MPhil in Computational Topology</div>
+									<div className="work-subtitle">MPhil in Pure Mathematics</div>
 									<div className="work-duration">2026 - Present</div>
 								</div>
 

@@ -4,7 +4,7 @@ const SEO = [
 	{
 		page: "home",
 		description:
-			"I am a mathematician, researcher, and data scientist completing an MPhil in Computational Topology at The University of Sydney and working in marketing science.",
+			"I am a mathematician, researcher, and data scientist completing an MPhil in Pure Mathematics at The University of Sydney.",
 		keywords: ["Bruwel", "Daniel Bruwel", "Data Science", "Mathematics", "Computational Topology"],
 	},
 
@@ -18,7 +18,7 @@ const SEO = [
 	{
 		page: "resume",
 		description:
-			"Technical resume covering Applied & Computational Mathematics, Mathematical Software, and Custom Media Mix Modeling.",
+			"Resume covering education, industry experience, research, talks, teaching, and technical skills.",
 		keywords: ["Bruwel", "Daniel Bruwel", "Data Science", "Mathematics", "Resume"],
 	},
 

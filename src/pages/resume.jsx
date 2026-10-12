@@ -59,29 +59,75 @@ const Resume = () => {
 									))}
 									<br />
 
-									{/* PUBLICATIONS (Conditionally rendered if array is not empty) */}
-									{INFO.resume.publications && INFO.resume.publications.length > 0 && (
+									{/* INDUSTRY EXPERIENCE */}
+									{INFO.resume.experience && INFO.resume.experience.length > 0 && (
 										<>
-											<h2 className="resume-section-heading">PUBLICATIONS:</h2><br />
-											{INFO.resume.publications.map((pub, index) => (
+											<h2 className="resume-section-heading">INDUSTRY EXPERIENCE:</h2><br />
+											{INFO.resume.experience.map((job, index) => (
 												<div key={index} style={{ marginBottom: '1em' }}>
-													<strong>{pub.title}</strong> &mdash; {pub.year}<br />
-													<em>{pub.journal}</em><br />
-													{pub.details}<br />
+													<h3 className="resume-entry-heading">{job.company} &mdash; {job.duration}</h3><br />
+													<em>{job.role}</em><br />
+													<ul>
+														{job.points.map((point, i) => (
+															<li key={i}>{point}</li>
+														))}
+													</ul>
+												</div>
+											))}
+										</>
+									)}
+
+									{/* RESEARCH */}
+									{INFO.resume.research && INFO.resume.research.length > 0 && (
+										<>
+											<h2 className="resume-section-heading">RESEARCH:</h2><br />
+											{INFO.resume.research.map((item, index) => (
+												<div key={index} style={{ marginBottom: '1em' }}>
+													<strong>{item.title}</strong> &mdash; {item.year}<br />
+													<em>{item.supervisor}</em><br />
+													{item.details}<br />
 												</div>
 											))}
 											<br />
 										</>
 									)}
 
-									{/* CONFERENCES & WORKSHOPS */}
-									{INFO.resume.conferences_and_workshops && INFO.resume.conferences_and_workshops.length > 0 && (
+									{/* PAPERS IN PREPARATION (Conditionally rendered if array is not empty) */}
+									{INFO.resume.publications && INFO.resume.publications.length > 0 && (
 										<>
-											<h2 className="resume-section-heading">CONFERENCES & WORKSHOPS:</h2><br />
-											{INFO.resume.conferences_and_workshops.map((conf, index) => (
+											<h2 className="resume-section-heading">PAPERS IN PREPARATION:</h2><br />
+											{INFO.resume.publications.map((pub, index) => (
 												<div key={index} style={{ marginBottom: '1em' }}>
-													<strong>{conf.title}</strong> &mdash; {conf.year}<br />
-													{conf.details}<br />
+													<strong>{pub.title}</strong><br />
+													<em>{pub.authors}</em><br />
+												</div>
+											))}
+											<br />
+										</>
+									)}
+
+									{/* TALKS & SCHOOLS */}
+									{INFO.resume.talks && INFO.resume.talks.length > 0 && (
+										<>
+											<h2 className="resume-section-heading">TALKS & SCHOOLS:</h2><br />
+											{INFO.resume.talks.map((talk, index) => (
+												<div key={index} style={{ marginBottom: '1em' }}>
+													<strong>{talk.venue}</strong> &mdash; {talk.year}<br />
+													<em>Talk: {talk.title}</em><br />
+												</div>
+											))}
+											<br />
+										</>
+									)}
+
+									{/* TEACHING */}
+									{INFO.resume.teaching && INFO.resume.teaching.length > 0 && (
+										<>
+											<h2 className="resume-section-heading">TEACHING:</h2><br />
+											{INFO.resume.teaching.map((job, index) => (
+												<div key={index} style={{ marginBottom: '1em' }}>
+													<strong>{job.institute}</strong> &mdash; {job.duration}<br />
+													<em>{job.role}</em><br />
 												</div>
 											))}
 											<br />
